@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS grid Layout</title>
+<style>
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 2fr;
+	grid-gap: 1em;
+	/*grid-auto-rows: 100px; */
+	grid-auto-rows: minmax(100px,auto);
+
+}
+
+.nested{
+	display: grid;
+	grid-template-columns: 1fr  1fr 2fr;
+	grid-auto-rows: 60px;
+	grid-gap: 1em;
+
+}
+
+
+
+.wrapper > div{
+	background: #eee;
+	padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+	background: #ddd;
+}
+
+.nested > div{
+	border:  #333 1px solid;
+	padding: 1em;
+}
+
+</style>
+<body>
+	<div class="wrapper">
+		<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page. This is the implementation of css grid.Welcome to this page. This is the implementation of css grid.Welcome to this page. This is the implementation of css grid.Welcome to this page. This is the implementation of css grid.Welcome to this page. This is the implementation of css grid.Welcome to this page. This is the implementation of css grid.
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div class="nested">
+		<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+	<div>
+		 CSS 
+	</div>
+
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	<div>Welcome to this page
+	</div>
+	
+</div>
+</body>
+</html>
